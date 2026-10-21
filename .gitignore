@@ -1,0 +1,35 @@
+# Raw datasets and exports
+data/
+exports/
+downloads/
+*.csv
+*.tsv
+*.xlsx
+*.parquet
+
+# Environment variables and credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.sso
+*.jks
+*.keystore
+
+# Oracle wallets and connection files
+wallet/
+Wallet_*/
+tnsnames.ora
+sqlnet.ora
+ojdbc.properties
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# macOS and temporary files
+.DS_Store
+*.log
