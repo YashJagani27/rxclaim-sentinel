@@ -10,6 +10,7 @@ downloads/
 # Environment variables and credentials
 .env
 .env.*
+!.env.example
 *.pem
 *.key
 *.p12
@@ -33,3 +34,26 @@ __pycache__/
 # macOS and temporary files
 .DS_Store
 *.log
+
+# Downloaded raw datasets
+data/raw/
+
+# Python generated files
+__pycache__/
+*.pyc
+# Local ELK pipeline logs
+/logs/
+
+# Tableau temporary files and data extracts
+*.twbr
+*.twbx
+*.hyper
+*.tde
+
+# Additional private key and Oracle wallet formats
+*.pfx
+*.p8
+*.kdb
+*.sth
+id_rsa
+id_ed25519
