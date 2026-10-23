@@ -1,11 +1,20 @@
 # RxClaim Sentinel
 
-**Python · OCI Object Storage · Oracle Autonomous Database · SQL · Tableau Public**
+RxClaim Sentinel is a dashboard project that shows how Medicaid drug spending
+changed across California, Massachusetts, and Tennessee in 2025, and which
+drugs had reimbursement increases worth reviewing.
 
-I built RxClaim Sentinel to explore Medicaid drug spending, track reimbursement
-changes, and prioritize drugs for further review. It combines public 2025
-Medicaid utilization data with National Average Drug Acquisition Cost (NADAC)
-reference data.
+I downloaded public Medicaid drug utilization files, combined the three states'
+data, and cleaned it in Oracle Cloud. I also used Python to filter national
+average drug acquisition cost (NADAC) data to the drugs in the Medicaid dataset,
+then added it to Oracle to see where pricing references were available.
+
+Using SQL, I calculated spending and prescription trends and flagged drugs with
+large increases in reimbursement per prescription. I exported the results to
+Tableau and built three dashboards: an overall spending view, a pricing-reference
+coverage view, and a prioritized drug investigation queue.
+
+**Tools:** Python · OCI Object Storage · Oracle Autonomous Database · SQL · Tableau Public
 
 ## Data and results
 
@@ -31,13 +40,12 @@ flowchart LR
     C --> T[Tableau Public]
 ```
 
-Files are loaded from Object Storage using Oracle Data Studio's Data Load tool.
-SQL standardizes fields, handles suppressed values, builds quarterly NADAC
-references, and calculates spending and reimbursement trends. Investigation
-rules flag significant quarter-over-quarter increases and assign review priorities.
+I staged the source files in OCI Object Storage and loaded them into Oracle.
+The Bronze layer holds the raw data, Silver cleans it, and Gold contains the
+metrics used by the dashboards. SQL rules compare consecutive quarters and
+assign review priorities to flagged records.
 
-This is a manually orchestrated batch pipeline. Gold results are exported as
-CSVs; Tableau requires a manual data refresh.
+Loading and CSV exports are manual, and Tableau requires a manual data refresh.
 
 ## Dashboards
 
