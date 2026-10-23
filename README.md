@@ -41,11 +41,19 @@ CSVs; Tableau requires a manual data refresh.
 
 ## Dashboards
 
-Open the [packaged Tableau workbook](dashboard/RxClaim_Sentinel_Executive_dashboard.twbx) to explore:
+Open the [packaged Tableau workbook](dashboard/RxClaim_Sentinel_Executive_dashboard.twbx) for interactive exploration.
 
-- **Executive Overview** — spending, prescriptions, and quarterly trends.
-- **NADAC Coverage & Data Quality** — reference matching and suppression coverage.
-- **Drug Investigation & Risk Monitoring** — flagged NDCs and review priorities.
+**Executive Overview** — spending, prescriptions, and quarterly trends.
+
+![Executive Overview dashboard showing Medicaid reimbursement, prescriptions, and state trends](screenshots/executive-overview.png)
+
+**NADAC Coverage & Data Quality** — reference matching and suppression coverage.
+
+![NADAC Coverage and Data Quality dashboard showing match rates, quarterly coverage, and suppression by state](screenshots/nadac-coverage-data-quality.png)
+
+**Drug Investigation & Risk Monitoring** — flagged NDCs and review priorities.
+
+![Drug Investigation and Risk Monitoring dashboard showing alerts by priority and the investigation queue](screenshots/drug-investigation-risk-monitoring.png)
 
 ## Explore the project
 
