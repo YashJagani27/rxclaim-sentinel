@@ -1,0 +1,146 @@
+{
+  "verified_on": "2026-10-22",
+  "source_file": "export (3).csv",
+  "source_sha256": "4c8a921070646a77fd4d15da1057fe065dbe51d276899128c2d85dfc79fec7d6",
+  "dependency_count": 17,
+  "object_count": 17,
+  "validation": "All 17 supplied dependency edges match the recovered project SQL; documented setup order respects every edge. All referenced objects are in the recovered set, with owner ADMIN and no database links. This is metadata validation, not a pipeline execution.",
+  "dependencies": [
+    {
+      "NAME": "CLEAN_MEDICAID_2025",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "RAW_MEDICAID_2025",
+      "REFERENCED_TYPE": "VIEW",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "CLEAN_NADAC_2025",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "RAW_NADAC_2025",
+      "REFERENCED_TYPE": "TABLE",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "GOLD_MEDICAID_NADAC_REFERENCE",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "CLEAN_MEDICAID_2025",
+      "REFERENCED_TYPE": "VIEW",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "GOLD_MEDICAID_NADAC_REFERENCE",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "GOLD_NADAC_QUARTERLY_REFERENCE",
+      "REFERENCED_TYPE": "VIEW",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "GOLD_NADAC_COVERAGE_DASHBOARD",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "GOLD_MEDICAID_NADAC_REFERENCE",
+      "REFERENCED_TYPE": "VIEW",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "GOLD_NADAC_QUARTERLY_REFERENCE",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "CLEAN_NADAC_2025",
+      "REFERENCED_TYPE": "VIEW",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "GOLD_NDC_INVESTIGATION_QUEUE",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "GOLD_NDC_QOQ_ANALYSIS",
+      "REFERENCED_TYPE": "VIEW",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "GOLD_NDC_QOQ_ANALYSIS",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "GOLD_NDC_QUARTERLY",
+      "REFERENCED_TYPE": "VIEW",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "GOLD_NDC_QUARTERLY",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "CLEAN_MEDICAID_2025",
+      "REFERENCED_TYPE": "VIEW",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "GOLD_NDC_REVIEW_DASHBOARD",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "GOLD_NDC_INVESTIGATION_QUEUE",
+      "REFERENCED_TYPE": "VIEW",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "GOLD_NDC_REVIEW_DASHBOARD",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "GOLD_NDC_QUARTERLY",
+      "REFERENCED_TYPE": "VIEW",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "GOLD_QUARTERLY_PHARMACY_KPIS",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "CLEAN_MEDICAID_2025",
+      "REFERENCED_TYPE": "VIEW",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "GOLD_QUARTERLY_RISK_FLAGS",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "GOLD_QUARTERLY_TRENDS",
+      "REFERENCED_TYPE": "VIEW",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "GOLD_QUARTERLY_TRENDS",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "GOLD_QUARTERLY_PHARMACY_KPIS",
+      "REFERENCED_TYPE": "VIEW",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "RAW_MEDICAID_2025",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "RAW_MEDICAID_2025_CA",
+      "REFERENCED_TYPE": "TABLE",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "RAW_MEDICAID_2025",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "RAW_MEDICAID_2025_MA",
+      "REFERENCED_TYPE": "TABLE",
+      "REFERENCED_LINK_NAME": ""
+    },
+    {
+      "NAME": "RAW_MEDICAID_2025",
+      "TYPE": "VIEW",
+      "REFERENCED_OWNER": "ADMIN",
+      "REFERENCED_NAME": "RAW_MEDICAID_2025_TN",
+      "REFERENCED_TYPE": "TABLE",
+      "REFERENCED_LINK_NAME": ""
+    }
+  ]
+}

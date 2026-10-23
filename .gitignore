@@ -1,6 +1,8 @@
 # Raw datasets and exports
 data/
 exports/
+!/sql/exports/
+!/sql/exports/*.sql
 downloads/
 *.csv
 *.tsv
@@ -49,6 +51,11 @@ __pycache__/
 *.twbx
 *.hyper
 *.tde
+
+# The reviewed final package is the single published Tableau deliverable.
+!dashboard/RxClaim_Sentinel_Executive_dashboard.twbx
+# Older loose workbooks remain local historical copies.
+/dashboard/*.twb
 
 # Additional private key and Oracle wallet formats
 *.pfx

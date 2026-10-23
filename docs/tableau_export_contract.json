@@ -1,0 +1,183 @@
+{
+  "description": "CSV headers and Tableau field types observed in the final packaged workbook. This contract does not establish Oracle lineage or nullability.",
+  "exports": {
+    "tableau_drug_investigations.csv": [
+      {
+        "name": "STATE",
+        "type": "string"
+      },
+      {
+        "name": "REPORT_YEAR",
+        "type": "integer"
+      },
+      {
+        "name": "REPORT_QUARTER",
+        "type": "integer"
+      },
+      {
+        "name": "UTILIZATION_TYPE",
+        "type": "string"
+      },
+      {
+        "name": "NDC",
+        "type": "string"
+      },
+      {
+        "name": "PRODUCT_NAME",
+        "type": "string"
+      },
+      {
+        "name": "PREV_RX",
+        "type": "integer"
+      },
+      {
+        "name": "REPORTED_RX",
+        "type": "integer"
+      },
+      {
+        "name": "REPORTED_UNITS",
+        "type": "real"
+      },
+      {
+        "name": "REPORTED_REIMBURSEMENT",
+        "type": "real"
+      },
+      {
+        "name": "SUPPRESSED_ROWS",
+        "type": "integer"
+      },
+      {
+        "name": "UNITS_PER_RX",
+        "type": "real"
+      },
+      {
+        "name": "REIMBURSEMENT_PER_UNIT",
+        "type": "real"
+      },
+      {
+        "name": "REIMBURSEMENT_PER_RX",
+        "type": "real"
+      },
+      {
+        "name": "UNITS_PER_RX_CHANGE_PCT",
+        "type": "real"
+      },
+      {
+        "name": "REIMB_PER_UNIT_CHANGE_PCT",
+        "type": "real"
+      },
+      {
+        "name": "REIMB_PER_RX_CHANGE_PCT",
+        "type": "real"
+      },
+      {
+        "name": "WITHIN_NDC_EFFECT",
+        "type": "real"
+      },
+      {
+        "name": "INVESTIGATION_CATEGORY",
+        "type": "string"
+      },
+      {
+        "name": "REVIEW_PRIORITY",
+        "type": "string"
+      }
+    ],
+    "tableau_executive_overview.csv": [
+      {
+        "name": "STATE",
+        "type": "string"
+      },
+      {
+        "name": "REPORT_YEAR",
+        "type": "integer"
+      },
+      {
+        "name": "REPORT_QUARTER",
+        "type": "integer"
+      },
+      {
+        "name": "UTILIZATION_TYPE",
+        "type": "string"
+      },
+      {
+        "name": "SOURCE_ROWS",
+        "type": "integer"
+      },
+      {
+        "name": "SUPPRESSED_ROWS",
+        "type": "integer"
+      },
+      {
+        "name": "REPORTABLE_ROWS",
+        "type": "integer"
+      },
+      {
+        "name": "REPORTED_PRESCRIPTIONS",
+        "type": "integer"
+      },
+      {
+        "name": "REPORTED_UNITS",
+        "type": "real"
+      },
+      {
+        "name": "REPORTED_REIMBURSEMENT",
+        "type": "real"
+      },
+      {
+        "name": "REIMBURSEMENT_PER_RX",
+        "type": "real"
+      },
+      {
+        "name": "SUPPRESSED_ROW_PCT",
+        "type": "real"
+      }
+    ],
+    "tableau_nadac_coverage.csv": [
+      {
+        "name": "STATE",
+        "type": "string"
+      },
+      {
+        "name": "REPORT_YEAR",
+        "type": "integer"
+      },
+      {
+        "name": "REPORT_QUARTER",
+        "type": "integer"
+      },
+      {
+        "name": "UTILIZATION_TYPE",
+        "type": "string"
+      },
+      {
+        "name": "MEDICAID_ROWS",
+        "type": "integer"
+      },
+      {
+        "name": "MATCHED_ROWS",
+        "type": "integer"
+      },
+      {
+        "name": "UNMATCHED_ROWS",
+        "type": "integer"
+      },
+      {
+        "name": "REPORTABLE_ROWS",
+        "type": "integer"
+      },
+      {
+        "name": "SUPPRESSED_ROWS",
+        "type": "integer"
+      },
+      {
+        "name": "REPORTABLE_MATCHED_ROWS",
+        "type": "integer"
+      },
+      {
+        "name": "MATCH_RATE_PCT",
+        "type": "real"
+      }
+    ]
+  }
+}

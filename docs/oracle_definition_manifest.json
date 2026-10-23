@@ -1,0 +1,146 @@
+{
+  "recovered_on": "2026-10-22",
+  "source_file": "export (9).tsv",
+  "source_sha256": "3c3ac27e0365697b00331762ff4c1bb0d2b4ffcd3800d55a0ab21b4d9f99f7fa",
+  "source_rows": 39,
+  "object_count": 17,
+  "validation": "Inventory matches; exact DDL lengths, unique contiguous chunks, part counts, CREATE targets, and limited secret-marker screening passed. Original DDL preserved; new files have an added SQL terminator. No SQL executed.",
+  "objects": [
+    {
+      "object_name": "RAW_MEDICAID_2025_CA",
+      "object_type": "TABLE",
+      "path": "sql/bronze/00_raw_medicaid_2025_ca.sql",
+      "export_characters": 2542,
+      "export_sha256": "8737608d853c641e2428d1bde5992d70da80ba2a5855ca02c252a85a44f4baf6",
+      "file_sha256": "188380acc3e8c639a904187991a48bac7ad8314f810d0bc9f7f24865e210437c"
+    },
+    {
+      "object_name": "RAW_MEDICAID_2025_MA",
+      "object_type": "TABLE",
+      "path": "sql/bronze/00_raw_medicaid_2025_ma.sql",
+      "export_characters": 2542,
+      "export_sha256": "5235771ab7760009e4c20536f1cd242ead20f2cb63c7304fcd48a4e126365564",
+      "file_sha256": "6ce9672e43fb7e19731e2b624af03a9742905cd99d3e9542296057bb47686c30"
+    },
+    {
+      "object_name": "RAW_MEDICAID_2025_TN",
+      "object_type": "TABLE",
+      "path": "sql/bronze/00_raw_medicaid_2025_tn.sql",
+      "export_characters": 2542,
+      "export_sha256": "412cc69d5d1fb3dab80c4fd0c5941d8e2250478b6af075475d19ad18989c6b66",
+      "file_sha256": "bbd3e2e4949f3f656c4b9ecde62600467702ca14efbdc320290d4e36be209f0c"
+    },
+    {
+      "object_name": "RAW_NADAC_2025",
+      "object_type": "TABLE",
+      "path": "sql/bronze/00_raw_nadac_2025.sql",
+      "export_characters": 2278,
+      "export_sha256": "edae45d0774226d1834be1a217c320a7c614c4ff200ceb216c7a057887b11697",
+      "file_sha256": "f813bf3e320f055be6e3a38b32d754349151b700d80fd192adfc762722f9ae9e"
+    },
+    {
+      "object_name": "CLEAN_MEDICAID_2025",
+      "object_type": "VIEW",
+      "path": "sql/silver/02_clean_medicaid_2025.sql",
+      "export_characters": 1958,
+      "export_sha256": "1cc58b6e416edad03e8f63ff29c4c7162b0a158b37ef55b2767fa8d991ab5397",
+      "file_sha256": "e25f12646c2223ff66c6f164abd837e2cff55f434ebdfe6057af307a57996df7"
+    },
+    {
+      "object_name": "CLEAN_NADAC_2025",
+      "object_type": "VIEW",
+      "path": "sql/silver/03_clean_nadac_2025.sql",
+      "export_characters": 1140,
+      "export_sha256": "faa8d506e6d47fbeac16ab198c0a25a126a6272b8521c3e25b31ad7c9e6cc089",
+      "file_sha256": "7d32df0a967924d98ee762d890d4dfd8b3e5275b6b84d133f5fddc622f9de0da"
+    },
+    {
+      "object_name": "GOLD_MEDICAID_NADAC_REFERENCE",
+      "object_type": "VIEW",
+      "path": "sql/gold/09_medicaid_nadac_reference.sql",
+      "export_characters": 1571,
+      "export_sha256": "09963809cf3414c229084bd7e206f90e4ed4dd1989e6ee2b01f3af0d06840dcd",
+      "file_sha256": "ec2677ca6efbadf841791863f9d006be5b74c542ebc6e103b7b18c3dd28d267e"
+    },
+    {
+      "object_name": "GOLD_NADAC_COVERAGE_DASHBOARD",
+      "object_type": "VIEW",
+      "path": "sql/gold/10_nadac_coverage_dashboard.sql",
+      "export_characters": 2011,
+      "export_sha256": "a3f1fc1bc5edf6ee13640aa3a6a9594ee2c6579dc3c840a7b9c773efb6ea98a7",
+      "file_sha256": "75d5af64c0485e542bfafe6864a90913078e0932af95b8cb221b939daec51370"
+    },
+    {
+      "object_name": "GOLD_NADAC_QUARTERLY_REFERENCE",
+      "object_type": "VIEW",
+      "path": "sql/gold/08_nadac_quarterly_reference.sql",
+      "export_characters": 1073,
+      "export_sha256": "399875beb9e4a8eee750bb33b66e7e1a38563fbd8975d5c611bfc365c4a04272",
+      "file_sha256": "e0fe40dbd93b2c99a5e191b2b91dae9a4b751c770bc3550d178fa24f13ce07df"
+    },
+    {
+      "object_name": "GOLD_NDC_INVESTIGATION_QUEUE",
+      "object_type": "VIEW",
+      "path": "sql/gold/06_ndc_investigation_queue.sql",
+      "export_characters": 1239,
+      "export_sha256": "7ccb39cff86a859fe4e4b548d2dfa1abe367993b4e33997e5496c4c4ec22f952",
+      "file_sha256": "e5fbca3a8420a969fc1f30e1103e8be6bccf89499f65edea89267d762ac0d1df"
+    },
+    {
+      "object_name": "GOLD_NDC_QOQ_ANALYSIS",
+      "object_type": "VIEW",
+      "path": "sql/gold/05_ndc_qoq_analysis.sql",
+      "export_characters": 2857,
+      "export_sha256": "8b549241dd747cd0c0b0c3d21a736d1e5b13d6bbf77df1d6fcd5f10319c4a7a5",
+      "file_sha256": "a4eed0f71f77d9e45db9745f586c1d856cac3ee39ca8650ffca8eb2c1a093198"
+    },
+    {
+      "object_name": "GOLD_NDC_QUARTERLY",
+      "object_type": "VIEW",
+      "path": "sql/gold/04_ndc_quarterly.sql",
+      "export_characters": 1264,
+      "export_sha256": "d331428a1d82b8604a6c1b7bc5b9233028a7cd4055f5d0ad5b5af059ca9fc87d",
+      "file_sha256": "318d2c3d4626b6db3bb9618a77a91f711247e4c3757a656c0fb2cd9294b367ac"
+    },
+    {
+      "object_name": "GOLD_NDC_REVIEW_DASHBOARD",
+      "object_type": "VIEW",
+      "path": "sql/gold/07_ndc_review_dashboard.sql",
+      "export_characters": 1330,
+      "export_sha256": "31683d4765334c23a5c1bac63468ce13932fb91dfc11dabcaf08a82e8782acc4",
+      "file_sha256": "9e40ced2d01610400033388ac7b9e9a88a1af7b4726b5b2636b312dd458bd3ce"
+    },
+    {
+      "object_name": "GOLD_QUARTERLY_PHARMACY_KPIS",
+      "object_type": "VIEW",
+      "path": "sql/gold/01_quarterly_pharmacy_kpis.sql",
+      "export_characters": 1274,
+      "export_sha256": "a4addbdbb764c0e95a40c442fe76369705cd3467b94cf30d4b6b0de3f4bc03bd",
+      "file_sha256": "1012f31c5affc6a2f50a71babe36c319fba5c2550865f3c49c67d0890531d07c"
+    },
+    {
+      "object_name": "GOLD_QUARTERLY_RISK_FLAGS",
+      "object_type": "VIEW",
+      "path": "sql/gold/03_quarterly_risk_flags.sql",
+      "export_characters": 668,
+      "export_sha256": "b1e362b596bfe9fbb9022c5c2474ea01a7163bb54c1652ca2995672628bd1bc4",
+      "file_sha256": "05bda5eb56d94279c875d1a1a574d742de553561f96105848fd2f2ebe687f69d"
+    },
+    {
+      "object_name": "GOLD_QUARTERLY_TRENDS",
+      "object_type": "VIEW",
+      "path": "sql/gold/02_quarterly_trends.sql",
+      "export_characters": 1489,
+      "export_sha256": "8146c1e75785231f0d08db22f62d2f835b909db3352e708d1afdf40feeb5a460",
+      "file_sha256": "87fc294a817ffc3f68bb023f6d97bd991c78a9fa4f17ec2d111f9f1a8dfee381"
+    },
+    {
+      "object_name": "RAW_MEDICAID_2025",
+      "object_type": "VIEW",
+      "path": "sql/bronze/01_raw_medicaid_2025.sql",
+      "export_characters": 1422,
+      "export_sha256": "8b6cc3e79e0e844b47defab346a6e7abd5b081d7707b7ce78074b5cb87c42674",
+      "file_sha256": "a888006ccdf6f844fc35c01d26974f7b25932d4158482451aca3eadb38aa7b69"
+    }
+  ]
+}
